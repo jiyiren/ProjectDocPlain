@@ -16,4 +16,4 @@
 ## 说明
 
 * [图库资源](section3/openimage.md)
-* [无色主题]()
+* [有色主题](https://jiyiren.github.io/project-doc/)
