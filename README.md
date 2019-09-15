@@ -20,123 +20,82 @@
 
 本文档包含以下内容(**均是示例**)：
 
-- [Features](#features)
-- [Architecture](#architecture)
-- [Running](#running)
-	- [环境需求](#环境需求)
-	- [执行脚本](#执行脚本)
-- [Resources](#resources)
-- [References](#references)
+- [基本环境](#基本环境)
+	- [安装 Nodejs](安装-nodejs)
+	- [安装 gitbook](安装-gitbook)
+	- [使用 gitbook](使用-gitbook) 
+- [参考链接](#参考链接)
 
 
-# Features
-> 示例
+# 基本环境
 
-* 基于 `Gitbook` 开源生态，多插件，多模式支持，风格清晰；
-* 下面是自己扯的其他代码项目的 `Features`，仅仅作为例子；
-* 基于 `Dubbo` 高性能 `RPC` 框架，提高执行效率和扩展性；
-* 采用 `Redis` 构建分布式消息队列，实现非阻塞调用；
-* 数据采用 `Json` 格式存储与传输，更通用且便于扩展移植；
-* 模块化设计，功能抽象成函数、公共组件独立成库；
-
-# Architecture
-> 示例
-
-<div align="center">
-<img alt="logo" width="550" height="400" src="http://img.godjiyi.cn/csdnblogkafka-arc.jpg"/>
-</div>
-
-
-* **Topic**: 一个消息主题，也就是一个分布式消息队列名称;
-* **Producer**: 生产者，可以有多个，可同时生产多个 `Topic`；
-* **Partion**: 就是 `Topic` 分布式的体现：
-	* 一个 `Topic` 分成多个 `Partion`；
-	* 多个 `Producer` 生产消息可以并行入队；
-	* 同一个 `Partion` 里保证消息有序；
-* **Consumer Group**: 消费者组，这是 `Kafka` 最特别之处： 
-	* 一个消费组消费一个 Topic 的全量数据；
-	* 组内消费者消费一个或多个 Partion 数据；
-	* 一个组里的消费者应小于等于 Topic 的 Partion 数量； 
-* **架构最好配一张结构图，并将各个点概述下即可，中英文间加空格**。
-
-
-
-# Running
-> 示例
-
-## 环境需求
-
-下面为各个执行模块所需要的依赖包。
-
-* 分布式 - Main Host
-
-	```bash
-	pip install mysql-connector-python	// MySQL 数据库连
-	pip install DBUtils 	// 数据库连接池
-	pip install redis		// Redis 数据库
-	pip install flask		// Flask 以构建 Web API
-	pip install simplejson	// Json 解析库
-	```
-
-* 分布式 - Slave Host：
-
-	```bash
-	pip install -r slave/requirement.txt
-	```
+## 安装 Nodejs
 	
-* 上面主要按照自己项目的模块来，比如也可以写 Java 的 Maven 依赖；
+* 全球官网：[https://nodejs.org/en](https://nodejs.org/en)
+* 中文官网：[http://nodejs.cn/](http://nodejs.cn/)
+	
+下载安装后测试下 Node 是否安装成功：
+	
+```bash
+$ node -v
+v10.15.3
+```
+	
+如果提示命令没找到，那么是由于 Node 没有加入环境变量，大家将安装的 Node 环境地址放在环境变量里就可以了。
 
-## 执行脚本
+## 安装 gitbook
 
-项目主要分为 **Main Host 进程**、**Slave Host 进程**、**定时清理日志进程** 三大进程，我们分别实现了对应的启动脚本。
+直接输入命令进行安装：
+	
+```bash
+$ npm install gitbook-cli -g
+```
+	
+`npm` 也是和 `node` 一起安装的，`node` 存在 `npm` 就存在。`-g` 参数表示全局安装，也就是模块包会安装到全局环境里，这个是推荐做法，因为像这种工具命令全局安装是最好的。而项目依赖模块则项目内安装即可。
+	
+测试 gitbook 命令是否安装成功：
+	
+```bash
+$ gitbook -V
+CLI version: 2.3.2
+GitBook version: 3.2.3
+```
 
-* Main Host：
-
-	```bash
-	./main-host-process.sh > main.log 2>&1 &
-	```
-
-* Slave Host：
-
-	```bash
-	./slave-host-process.sh > slave.log 2>&1 &
-	```
-
-* 定时清理进程：
-
-	```bash
-	crontab -f schedule.file
-	```
-* 说明：最好将项目都通过命令启动，这样可以规避很多操作失误。
-
-# Resources
-
-下面为目前暂时需要的资源工具信息：
-
-* Kafka:
-	* 地址：**xxx.aaa.bbb.xxxx** 
-	* 主题：**demo1**,**demo2**
-
-* Redis:
-
-	* 内存：**2 GB**
-	* 地址和端口：
-		* Master: **xxx.aaa.bbb.cccc:1234**
-		* Slaver: **xxx.aaa.bbb.dddd:1234**
-	* 密码：**xxxxxxxx**
+## 使用 gitbook
+	
+任意找一个空目录，执行：
+	
+```bash
+$ gitbook init
+warn: no summary file in this book 
+info: create README.md 
+info: create SUMMARY.md 
+info: initialization is finished 
+```
+	
+会在当前目录下创建出两个文件，分别是：
+	
+```
+README.md
+SUMMARY.md
+```
+	
+暂且先不管其他的，我们现在可以直接运行试试，先把流程走通：
+	
+```bash
+$ gitbook build
+$ gitbook serve
+```
+	
+上面的 `gitbook build` 是编译整个 `markdown` 文件，然后在当前目录生成 `_book` 目录，里面是 html 页面。这个主要在部署的时候用到。
+	
+而 `gitbook serve` 是本地调试开启服务命令，项目最终是要成网站的，因此, 该命令可以开启本地 `http://127.0.0.1:4000` 地址作为网站浏览地址。
+	
+假如大家执行 `gitbook serve` 出错，建议大家先 `gitbook build` 在 `gitbook serve`.
+	
 
 
-* MySQL:
-
-	* 地址：**xxx.aaa.bbb.ccc**
-	* 用户名/密码：**name/xxxx**
-
-
-* 可以列出所有需要依赖的资源：
-	* 如果是内部可以公开所有信息，
-	* 如果不是则要注意隐私。
-
-## References
+## 参考链接
 1. [https://redis.io/](https://redis.io/)
 2. [https://jiyiren.github.io/2018/08/04/kafka/](https://jiyiren.github.io/2018/08/04/kafka/)
 3. [http://gitbook.zhangjikai.com/themes.html](http://gitbook.zhangjikai.com/themes.html)
