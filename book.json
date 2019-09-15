@@ -5,7 +5,7 @@
   "language": "zh-hans",
   "links": {
     "sidebar": {
-      "本文托管": "https://github.com/jiyiren/ProjectDoc"
+      "本文托管": "https://github.com/jiyiren/ProjectDocPlain"
     }
   },
   "styles": {
@@ -45,7 +45,7 @@
       ]
     },
     "github-buttons": {
-      "repo": "jiyiren/ProjectDoc",
+      "repo": "jiyiren/ProjectDocPlain",
       "types": [
           "star"
       ],

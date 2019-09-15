@@ -1,0 +1,539 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>项目结构 · ProjectDoc</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="jiyiren">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-prism/prism-a11y-dark.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+
+        
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="functions.html" />
+    
+    
+    <link rel="prev" href="../section1/resources.html" />
+    
+
+    <style>
+    @media only screen and (max-width: 640px) {
+        .book-header .hidden-mobile {
+            display: none;
+        }
+    }
+    </style>
+    <script>
+        window["gitbook-plugin-github-buttons"] = {"repo":"jiyiren/ProjectDocPlain","types":["star"],"size":"small"};
+    </script>
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://github.com/jiyiren/ProjectDocPlain" target="_blank" class="custom-link">本文托管</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        <li class="header">介绍</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                        <b>1.1.</b>
+                    
+                    简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../section1/resources.html">
+            
+                <a href="../section1/resources.html">
+            
+                    
+                        <b>1.2.</b>
+                    
+                    环境
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">实现</li>
+        
+        
+    
+        <li class="chapter active" data-level="2.1" data-path="modules.html">
+            
+                <a href="modules.html">
+            
+                    
+                        <b>2.1.</b>
+                    
+                    项目结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="functions.html">
+            
+                <a href="functions.html">
+            
+                    
+                        <b>2.2.</b>
+                    
+                    功能划分 ★
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="plugins.html">
+            
+                <a href="plugins.html">
+            
+                    
+                        <b>2.3.</b>
+                    
+                    必备插件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="scripts.html">
+            
+                <a href="scripts.html">
+            
+                    
+                        <b>2.4.</b>
+                    
+                    运行脚本 ❤︎
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">说明</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../section3/openimage.html">
+            
+                <a href="../section3/openimage.html">
+            
+                    
+                        <b>3.1.</b>
+                    
+                    图库资源
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" >
+            
+                <span>
+            
+                    
+                        <b>3.2.</b>
+                    
+                    无色主题
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >项目结构</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-anchor"></i><ul><li><a href="#&#x9879;&#x76EE;&#x76EE;&#x5F55;">1. &#x9879;&#x76EE;&#x76EE;&#x5F55;</a></li><li><a href="#&#x914D;&#x7F6E;&#x6587;&#x4EF6;">2. &#x914D;&#x7F6E;&#x6587;&#x4EF6;</a></li><ul><li><a href="#summarymd">2.1. SUMMARY.md</a></li><li><a href="#bookjson">2.2. book.json</a></li></ul><li><a href="#&#x53C2;&#x8003;">3. &#x53C2;&#x8003;</a></li></ul></div><a href="#&#x9879;&#x76EE;&#x76EE;&#x5F55;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><p>
+    <a href="https://jiyiren.github.io/" target="_blank"><img alt="logo" width="40" height="40" src="http://img.godjiyi.cn/jiyiheaderh-icon.png">
+    </a>
+</p>
+
+<p align="center" style="font-size: 2em">
+    &#x9879;&#x76EE;&#x7ED3;&#x6784;&#x8BF4;&#x660E;
+</p>
+
+<p align="center" style="font-size: 16px">@<a href="https://jiyiren.github.io/" target="_blank">JIYI</a> @<a href="https://jiyiren.github.io/" target="_blank">Leader</a></p>
+
+
+<div align="center" style="margin: 30px 0 35px;">
+<p align="center">&#x57FA;&#x4E8E; Gitbook &#x7684;&#x9879;&#x76EE;&#x6587;&#x6863;&#x76EE;&#x5F55;&#x7ED3;&#x6784;&#x8BF4;&#x660E;</p>
+</div>
+
+
+<p>&#x8FD9;&#x91CC;&#x4E3B;&#x8981;&#x8BF4;&#x660E;&#x672C;&#x9879;&#x76EE;&#x7ED3;&#x6784;&#x76EE;&#x5F55;&#xFF0C;&#x65E2;&#x7136;&#x57FA;&#x4E8E; <code>Gitbook</code> &#x7684;&#x6846;&#x67B6;&#x7684;&#xFF0C;&#x6574;&#x4F53;&#x4E0A;&#x4E5F;&#x662F; Gitbook &#x76EE;&#x5F55;&#x7ED3;&#x6784;&#x3002;&#x672C;&#x9879;&#x76EE;&#x5DF2;&#x7ECF;&#x5168;&#x90E8;&#x653E;&#x5728; <a href="https://github.com/jiyiren/ProjectDoc" target="_blank">Github &#x4ED3;&#x5E93;</a> &#x91CC;&#x4E86;&#xFF0C;&#x5927;&#x5BB6;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x53BB;&#x770B;&#x6E90;&#x7801;&#x76EE;&#x5F55;&#x3002;&#x5C31;&#x89C4;&#x8303;&#x6027;&#x6765;&#x8BB2;&#xFF0C;&#x8FD8;&#x662F;&#x6309;&#x6A21;&#x5757;&#x5212;&#x5206;&#x6BD4;&#x8F83;&#x597D;&#x4E00;&#x70B9;&#xFF0C;&#x672C;&#x9875;&#x8BF4;&#x660E;&#x7ED3;&#x6784;&#x6A21;&#x5757;&#x4EE5;&#x53CA;&#x5404;&#x4E2A;&#x6587;&#x4EF6;&#x7684;&#x4F5C;&#x7528;&#x3002;</p>
+<h2 id="&#x76EE;&#x5F55;&#x5185;&#x5BB9;"><a name="&#x76EE;&#x5F55;&#x5185;&#x5BB9;" class="anchor-navigation-ex-anchor" href="#&#x76EE;&#x5F55;&#x5185;&#x5BB9;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x76EE;&#x5F55;&#x5185;&#x5BB9;</h2>
+<p>&#x672C;&#x6587;&#x6863;&#x5305;&#x542B;&#x4EE5;&#x4E0B;&#x5185;&#x5BB9;&#xFF1A;</p>
+<ul>
+<li><a href="#&#x9879;&#x76EE;&#x76EE;&#x5F55;">&#x9879;&#x76EE;&#x76EE;&#x5F55;</a></li>
+<li><a href="#&#x914D;&#x7F6E;&#x6587;&#x4EF6;">&#x914D;&#x7F6E;&#x6587;&#x4EF6;</a><ul>
+<li><a href="#SUMMARY.md">SUMMARY.md</a></li>
+<li><a href="#book.json">book.json</a></li>
+</ul>
+</li>
+<li><a href="#&#x53C2;&#x8003;">&#x53C2;&#x8003;</a></li>
+</ul>
+<h1 id="&#x9879;&#x76EE;&#x76EE;&#x5F55;"><a name="&#x9879;&#x76EE;&#x76EE;&#x5F55;" class="anchor-navigation-ex-anchor" href="#&#x9879;&#x76EE;&#x76EE;&#x5F55;"><i class="fa fa-link" aria-hidden="true"></i></a>1. &#x9879;&#x76EE;&#x76EE;&#x5F55;</h1>
+<p>&#x9879;&#x76EE;&#x6574;&#x4F53;&#x7ED3;&#x6784;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre class="language-"><code>.
+&#x251C;&#x2500;&#x2500; README.md
+&#x251C;&#x2500;&#x2500; SUMMARY.md
+&#x251C;&#x2500;&#x2500; book.json
+&#x251C;&#x2500;&#x2500; _book
+&#x2502;   &#x251C;&#x2500;&#x2500; _img
+&#x2502;   &#x251C;&#x2500;&#x2500; gitbook
+&#x2502;   &#x251C;&#x2500;&#x2500; index.html
+&#x2502;   &#x251C;&#x2500;&#x2500; section1
+&#x2502;   &#x251C;&#x2500;&#x2500; section2
+&#x2502;   &#x251C;&#x2500;&#x2500; section3
+&#x2502;   &#x2514;&#x2500;&#x2500; styles
+&#x251C;&#x2500;&#x2500; _img
+&#x2502;   &#x251C;&#x2500;&#x2500; xxxx.png
+&#x251C;&#x2500;&#x2500; section1
+&#x2502;   &#x2514;&#x2500;&#x2500; resources.md
+&#x251C;&#x2500;&#x2500; section2
+&#x2502;   &#x251C;&#x2500;&#x2500; functions.md
+&#x2502;   &#x251C;&#x2500;&#x2500; modules.md
+&#x2502;   &#x251C;&#x2500;&#x2500; plugins.md
+&#x2502;   &#x2514;&#x2500;&#x2500; scripts.md
+&#x251C;&#x2500;&#x2500; section3
+&#x2502;   &#x2514;&#x2500;&#x2500; openimage.md
+&#x2514;&#x2500;&#x2500; styles
+    &#x2514;&#x2500;&#x2500; website.css
+</code></pre><p>&#x5404;&#x4E2A;&#x7ED3;&#x6784;&#x8BF4;&#x660E;&#xFF1A;</p>
+<ul>
+<li><strong>README.md</strong>: &#x7F51;&#x7AD9;&#x7684; README&#xFF0C;&#x4F46;&#x4E00;&#x822C;&#x5F88;&#x591A;&#x4EBA;&#x4F5C;&#x4E3A;&#x4E3B;&#x9875;&#xFF1B;</li>
+<li><strong>SUMMARY.md</strong>: &#x7F51;&#x7AD9;&#x7ED3;&#x6784;&#x6587;&#x6863;&#xFF0C;&#x4E3B;&#x8981;&#x5B9E;&#x73B0;&#x4FA7;&#x8FB9;&#x680F;&#x76EE;&#x5F55;&#x5BFC;&#x822A;&#xFF1B;</li>
+<li><strong>book.json</strong>: &#x6574;&#x4E2A; gitbook &#x9879;&#x76EE;&#x7684;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#xFF1B;</li>
+<li><strong>_book&#x76EE;&#x5F55;</strong>: &#x8FD9;&#x4E2A;&#x662F;&#x81EA;&#x52A8;&#x751F;&#x6210;&#x7684;&#x76EE;&#x5F55;&#xFF0C;&#x662F;&#x6784;&#x5EFA;&#x51FA;&#x6765;&#x7684;&#x9759;&#x6001;&#x9875;&#x9762;&#xFF1B;</li>
+<li><strong>_img&#x76EE;&#x5F55;</strong>: &#x8FD9;&#x4E2A;&#x662F;&#x4E2A;&#x4EBA;&#x8BBE;&#x5B9A;&#x7684;&#x56FE;&#x7247;&#x7B49;&#x9759;&#x6001;&#x8D44;&#x6E90;&#x76EE;&#x5F55;&#xFF1B;</li>
+<li><strong>section1/2/3&#x76EE;&#x5F55;</strong>: &#x8FD9;&#x4E2A;&#x662F; gitbook &#x9879;&#x76EE;&#x5404;&#x4E2A;&#x6A21;&#x5757;&#x76EE;&#x5F55;&#xFF0C;&#x91CC;&#x9762;&#x4E5F;&#x653E;&#x7F6E; markdown &#x6587;&#x4EF6;&#x3002;</li>
+<li><strong>styles&#x76EE;&#x5F55;</strong>: &#x8FD9;&#x4E2A;&#x4E5F;&#x662F;&#x81EA;&#x5DF1;&#x5B9A;&#x4E49;&#x7684;&#xFF0C;&#x8FD9;&#x91CC;&#x6211;&#x662F;&#x5B9E;&#x73B0;&#x9879;&#x76EE;&#x6574;&#x4F53;&#x7684;&#x4E3B;&#x9898;&#x914D;&#x8272;&#x3002;</li>
+</ul>
+<h1 id="&#x914D;&#x7F6E;&#x6587;&#x4EF6;"><a name="&#x914D;&#x7F6E;&#x6587;&#x4EF6;" class="anchor-navigation-ex-anchor" href="#&#x914D;&#x7F6E;&#x6587;&#x4EF6;"><i class="fa fa-link" aria-hidden="true"></i></a>2. &#x914D;&#x7F6E;&#x6587;&#x4EF6;</h1>
+<h2 id="summarymd"><a name="summarymd" class="anchor-navigation-ex-anchor" href="#summarymd"><i class="fa fa-link" aria-hidden="true"></i></a>2.1. SUMMARY.md</h2>
+<pre class="language-"><code class="lang-markdown"><span class="token title important"><span class="token punctuation">#</span> Summary</span>
+
+<span class="token title important"><span class="token punctuation">##</span> &#x4ECB;&#x7ECD;</span>
+
+<span class="token list punctuation">*</span> <span class="token url">[<span class="token content">&#x7B80;&#x4ECB;</span>](README.md)</span>
+<span class="token list punctuation">*</span> <span class="token url">[<span class="token content">&#x73AF;&#x5883;</span>](section1/resources.md)</span>
+
+<span class="token title important"><span class="token punctuation">##</span> &#x5B9E;&#x73B0;</span>
+
+<span class="token list punctuation">*</span> <span class="token url">[<span class="token content">&#x9879;&#x76EE;&#x7ED3;&#x6784;</span>](section2/modules.md)</span>
+<span class="token list punctuation">*</span> <span class="token url">[<span class="token content">&#x529F;&#x80FD;&#x5212;&#x5206; &#x2605;</span>](section2/functions.md)</span>
+<span class="token list punctuation">*</span> <span class="token url">[<span class="token content">&#x5FC5;&#x5907;&#x63D2;&#x4EF6;</span>](section2/plugins.md)</span>
+<span class="token list punctuation">*</span> <span class="token url">[<span class="token content">&#x8FD0;&#x884C;&#x811A;&#x672C; &#x2764;&#xFE0E;</span>](section2/scripts.md)</span>
+
+
+<span class="token title important"><span class="token punctuation">##</span> &#x8BF4;&#x660E;</span>
+
+<span class="token list punctuation">*</span> <span class="token url">[<span class="token content">&#x56FE;&#x5E93;&#x8D44;&#x6E90;</span>](section3/openimage.md)</span>
+<span class="token list punctuation">*</span> [&#x65E0;&#x8272;&#x4E3B;&#x9898;]()
+</code></pre>
+<h2 id="bookjson"><a name="bookjson" class="anchor-navigation-ex-anchor" href="#bookjson"><i class="fa fa-link" aria-hidden="true"></i></a>2.2. book.json</h2>
+<pre class="language-"><code class="lang-json"><span class="token punctuation">{</span>
+  <span class="token property">&quot;title&quot;</span><span class="token operator">:</span> <span class="token string">&quot;ProjectDoc&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;author&quot;</span><span class="token operator">:</span> <span class="token string">&quot;jiyiren&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;description&quot;</span><span class="token operator">:</span> <span class="token string">&quot;ProjectDoc&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;language&quot;</span><span class="token operator">:</span> <span class="token string">&quot;zh-hans&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;links&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;sidebar&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token property">&quot;&#x672C;&#x6587;&#x6258;&#x7BA1;&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://github.com/jiyiren/ProjectDoc&quot;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;styles&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;website&quot;</span><span class="token operator">:</span> <span class="token string">&quot;styles/website.css&quot;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;plugins&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token string">&quot;splitter@^0.0.8&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;-lunr&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;-search&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;search-plus@^0.0.11&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;tbfed-pagefooter@^0.0.1&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;anchor-navigation-ex@0.1.8&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;-highlight&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;prism@^2.1.0&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;prism-themes@^0.0.2&quot;</span>
+  <span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;pluginsConfig&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;theme-default&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token property">&quot;showLevel&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;tbfed-pagefooter&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token property">&quot;copyright&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Copyright &amp;copy csyiji@gmail.com 2019&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;modify_label&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&#x8BE5;&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;modify_format&quot;</span><span class="token operator">:</span> <span class="token string">&quot;YYYY-MM-DD HH:mm:ss&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;anchor-navigation-ex&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token property">&quot;isRewritePageTitle&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;isShowTocTitleIcon&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;tocLevel1Icon&quot;</span><span class="token operator">:</span> <span class="token string">&quot;fa fa-hand-o-right&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;tocLevel2Icon&quot;</span><span class="token operator">:</span> <span class="token string">&quot;fa fa-hand-o-right&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;tocLevel3Icon&quot;</span><span class="token operator">:</span> <span class="token string">&quot;fa fa-hand-o-right&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;prism&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token property">&quot;css&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token string">&quot;prism-themes/themes/prism-a11y-dark.css&quot;</span>
+      <span class="token punctuation">]</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;pdf&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;pageNumbers&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;fontSize&quot;</span><span class="token operator">:</span> <span class="token number">12</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;paperSize&quot;</span><span class="token operator">:</span> <span class="token string">&quot;a4&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;margin&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token property">&quot;right&quot;</span><span class="token operator">:</span> <span class="token number">10</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;left&quot;</span><span class="token operator">:</span> <span class="token number">10</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;top&quot;</span><span class="token operator">:</span> <span class="token number">10</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;bottom&quot;</span><span class="token operator">:</span> <span class="token number">10</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h1 id="&#x53C2;&#x8003;"><a name="&#x53C2;&#x8003;" class="anchor-navigation-ex-anchor" href="#&#x53C2;&#x8003;"><i class="fa fa-link" aria-hidden="true"></i></a>3. &#x53C2;&#x8003;</h1>
+<ol>
+<li><a href="https://redis.io/" target="_blank">https://redis.io/</a></li>
+<li><a href="http://docs.celeryproject.org/en/latest/" target="_blank">http://docs.celeryproject.org/en/latest/</a></li>
+<li><a href="https://www.cnblogs.com/alex3714/p/6351797.html" target="_blank">https://www.cnblogs.com/alex3714/p/6351797.html</a></li>
+<li><a href="https://www.cnblogs.com/guanfuchang/p/6561034.html" target="_blank">https://www.cnblogs.com/guanfuchang/p/6561034.html</a></li>
+<li><a href="https://blog.csdn.net/chenqiuge1984/article/details/80127446" target="_blank">https://blog.csdn.net/chenqiuge1984/article/details/80127446</a></li>
+</ol>
+<footer class="page-footer"><span class="copyright">Copyright &#xA9; csyiji@gmail.com 2019 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
+2019-09-15 16:39:04
+</span></footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../section1/resources.html" class="navigation navigation-prev " aria-label="Previous page: 环境">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="functions.html" class="navigation navigation-next " aria-label="Next page: 功能划分 ★">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"项目结构","level":"2.1","depth":1,"next":{"title":"功能划分 ★","level":"2.2","depth":1,"path":"section2/functions.md","ref":"section2/functions.md","articles":[]},"previous":{"title":"环境","level":"1.2","depth":1,"path":"section1/resources.md","ref":"section1/resources.md","articles":[]},"dir":"ltr"},"config":{"plugins":["splitter@^0.0.8","-lunr","-search","search-plus@^0.0.11","tbfed-pagefooter@^0.0.1","anchor-navigation-ex@0.1.8","-highlight","prism@^2.1.0","prism-themes@^0.0.2","github-buttons","github","livereload"],"styles":{},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy csyiji@gmail.com 2019","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"prism":{"css":["prism-themes/themes/prism-a11y-dark.css"]},"github":{"url":"https://github.com/jiyiren"},"livereload":{},"splitter":{},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"isRewritePageTitle":true,"isShowTocTitleIcon":true,"tocLevel1Icon":"fa fa-hand-o-right","tocLevel2Icon":"fa fa-hand-o-right","tocLevel3Icon":"fa fa-hand-o-right"},"prism-themes":{},"github-buttons":{"repo":"jiyiren/ProjectDocPlain","types":["star"],"size":"small"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"search-plus":{}},"theme":"default","author":"jiyiren","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":10,"left":10,"top":10,"bottom":10}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"ProjectDoc","language":"zh-hans","links":{"sidebar":{"本文托管":"https://github.com/jiyiren/ProjectDocPlain"}},"gitbook":"*","description":"ProjectDoc"},"file":{"path":"section2/modules.md","mtime":"2019-09-15T08:39:04.684Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-09-15T09:59:37.941Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github-buttons/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

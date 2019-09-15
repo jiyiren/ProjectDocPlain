@@ -2,7 +2,7 @@
 
 ## 介绍
 
-* [简介](section1/home.md)
+* [简介](README.md)
 * [环境](section1/resources.md)
 
 ## 实现
